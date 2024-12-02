@@ -1,0 +1,535 @@
+body {
+    padding: 5px; 
+    border: 1px solid black;
+    margin: 0 auto;
+    max-width: 97%;
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 100%;
+        padding: 10px;
+        p {
+            font-size: 16px; 
+        }
+    }
+}
+  
+  .topnav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    padding-bottom: 50px;
+}
+
+.topnav img {
+    height: 75px; 
+    width: auto; 
+}
+
+.nav-links, .right-links {
+    display: flex; 
+    align-items: center;
+    
+}
+
+.topnav a {
+    margin-left: 10px; 
+    text-decoration: none; 
+    color: black; 
+    font-family: 'Martian Mono';
+    font-size: var(--font-size-links);
+    font-weight: var(--standard-font-weight);
+    text-transform: uppercase;
+
+}
+
+.right-links {
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: "Martian Mono";
+        text-transform: uppercase;
+        gap: 12px;
+        padding: 10px 16px 10px 16px;
+        border: 2px solid #222226;
+        background-color: white;
+    }
+}
+
+.hamburger {
+    display: none; 
+    font-size: 30px; 
+    cursor: pointer; 
+    margin-left: auto; 
+    border: 1px solid black;
+}
+
+.mobile-menu {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding-bottom: 30px;
+    }
+
+    .nav-links,
+    .right-links {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    .mobile-menu {
+        flex-direction: column; 
+        width: 100%; 
+        text-align: left; 
+        background-color: #f8f8f8; 
+        padding: 10px 0; 
+        display: none; 
+    }
+
+    .mobile-menu.active {
+        display: flex; 
+    }
+
+    .mobile-menu a {
+        padding: 10px; 
+        text-decoration: none; 
+        color: black; 
+        display: block; 
+        border-bottom: 1px solid #ddd; 
+    }
+}
+
+.hero{
+    text-align: center;
+    h1 {
+        font-size: var(--font-size-l); /* Kleinere schermen */
+    }
+
+    p {
+        font-size: var(--font-size-paragraph);
+        margin: 0 auto;
+        padding: 10px; 
+    }
+
+    a {
+        font-size: var(--font-size-paragraph);
+        color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero{
+        padding-top: 20px;
+        h1 {
+            font-size: var(--font-size-xxl); /* Grotere schermen */
+        }
+        p {
+            font-size: var(--font-size-paragraph);
+        }
+    }
+}
+
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Items verdeeld over de volledige breedte */
+    flex-wrap: wrap; /* Laat de items wrappen indien nodig */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        flex-direction: column; /* Zet de filter items onder elkaar */
+        justify-content: center; /* Centreer items horizontaal */
+        align-items: center; /* Centreer items verticaal */
+        padding: 10px;
+    }
+
+    .filter ul {
+        justify-content: center; /* Centreer de lijst met filters */
+        width: 100%; /* Laat de lijst de volledige breedte gebruiken */
+        text-align: center; /* Zorg ervoor dat de tekst ook gecentreerd is */
+    }
+
+    .filter li {
+        margin-right: 0; /* Verwijder eventuele marges tussen de filter items */
+        margin-bottom: 10px; /* Voeg een kleine marge aan de onderkant toe */
+        text-align: center; /* Centreer de tekst in elke filter */
+    }
+
+    #search-input {
+        width: 100%; /* Zorg ervoor dat de zoekbalk de volledige breedte heeft */
+        margin-bottom: 10px; /* Voeg wat ruimte onder de zoekbalk toe */
+        text-align: center;
+        }
+}
+
+
+.filter #search-input {
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    max-width: 90%;
+  
+}
+
+.filter ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto; 
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+        padding: 8px;
+        flex: 1 1 1 100% ;
+    }
+
+    li {
+        padding: 10px 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        position: relative;
+        @media (min-width: 768px) {
+            padding: 8px;
+        }
+    }
+
+    .plus-sign{
+      position: absolute;
+      right: 22px;
+      top: 25px;
+      padding-right: 10px;
+      height: 25%;
+      width: 10%;
+      background: white;
+      pointer-events: none;
+    }
+}
+
+.filter-element{
+  border: 2px solid black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  height: 52px;
+  width: 149px;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column; /* Standaard verticale richting */
+    max-width: 97%;
+    gap: 16px; /* Ruimte tussen blokken */
+    font-family: "Martian Mono";
+
+    .block {
+        border: 1px solid black;
+        padding: 5px;
+        width: 100%; /* Blok neemt 100% van de containerbreedte in */
+    }
+
+    img {
+        width: 100%; /* Afbeelding schaalt met het blok mee */
+        height: auto;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    .strategy {
+        border: 1px solid black;
+        padding: 2px 5px;
+        max-width: fit-content;
+        display: flex;
+        flex-direction: row; /* Items horizontaal */
+        align-items: center; /* Verticaal centreren */
+        flex-wrap: nowrap;
+        font-size: 10px;
+        font-family: 'Martian Mono';
+    }
+
+    P {
+        font-size: var(--font-size-paragraph);
+        font-family: var(--main-font);
+        font-weight: var(--regular-font-weight);
+        line-height: 24px;
+        letter-spacing: var(--letter-spacing-main);
+    }
+
+    a {
+        font-family: 'Martian Mono';
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+}
+
+/* Media query voor grotere schermen */
+@media (min-width: 1024px) {
+    .block-container {
+        flex-direction: row; /* Horizontale richting */
+        flex-wrap: wrap; /* Laat blokken wrappen als nodig */
+        gap: 1px; /* Ruimte tussen de blokken */
+    }
+
+    .block {
+        flex: 1 1 1 calc(33.33% - 1px); /* Elk blok neemt 1/3 van de breedte, rekening houdend met gap */
+        max-width: calc(32.5% - 1px); /* Maximale breedte aangepast aan gap */
+    }
+
+    img {
+        width: 100%; /* Afbeeldingen schalen met de container */
+        height: auto;
+        padding: 0; /* Geen extra padding rond afbeeldingen */
+    }
+}
+
+.vacatureblok {
+    display: flex;
+    flex-direction: column; /* Standaard voor kleinere schermen */
+    padding: 20px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    max-width: 97%;
+
+    h3{
+        margin: 0; 
+        flex: 1; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacatureblok {
+        flex-direction: row; /* Horizontaal op grotere schermen */
+        justify-content: space-between;
+    }
+}
+
+.vacaturelink {
+    padding-top: 20px;
+    white-space: nowrap; 
+    color: blue;
+    font-family: 'Martian Mono';
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+        margin-left: 20px; 
+    }
+}
+
+.laden{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 0.5px solid black;
+    max-width: 100%;
+
+    p{
+        text-align: center;
+        font-family: 'Martian Mono';
+        font-size: 12px;
+        margin: 1em;
+    }
+}
+
+.partners{
+    border-top: 0.5px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 0.5px solid black;
+
+    a {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-decoration: underline;
+        color: blue;
+        font-family: 'martian mono';
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 5px;
+    }
+
+}
+
+.partner-carousel {
+    display: flex;
+    flex-wrap: wrap; /* Laat items wrappen naar een nieuwe rij */
+    border-top: 0.5px solid black;
+    border-right: 1px solid black;
+    gap: 0; /* Geen extra ruimte tussen items (optioneel, afhankelijk van design) */
+
+    img {
+        flex: 1 1 calc(20% - 1px); /* Elk item neemt 20% van de breedte minus borders */
+        max-width: calc(20% - 1px); /* Voorkom dat ze breder worden */
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    @media (min-width: 1024px) {
+        .partner-carousel {
+            flex-wrap: nowrap; /* Geen wrapping: alle items in één rij */
+        }
+    
+        img {
+            flex: 1 1 calc(10% - 1px); /* Elk item neemt 10% van de breedte */
+            max-width: calc(10% - 1px); /* Zorg ervoor dat breedte niet overschrijdt */
+        }
+    }
+}
+
+footer{
+    display: grid;
+    font-size: var(--font-size-paragraph);
+    font-family: var(--main-font);
+    font-weight: var(--regular-font-weight);
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing-main);
+
+    img{
+        display: block;
+        height: 75px;
+        width: auto;
+        padding-left: 5px;
+
+    }
+}
+
+.footer-inloggen{
+    padding-top: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+    a {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        text-decoration: underline;
+        color: blue;
+        font-family: 'martian mono';
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 5px;
+    }
+}
+
+.footer-links{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    ul{
+        list-style-type: none;
+        padding: 0; 
+        margin: 10px;
+        text-align: left;
+    }
+
+    li{
+        margin-bottom: 1em;
+    }
+
+    a{
+        color: black;
+    }
+}
+
+.footer-info {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.footer-info li {
+    list-style-type: none; /* Verwijdert bullet points */
+    margin: 5px 0;
+}
+
+
+@media (min-width: 1024px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Drie kolommen */
+        grid-gap: 0px; /* Ruimte tussen kolommen */
+        align-items: stretch; /* Zorg dat alle kolommen even hoog zijn */
+        width: 100%;
+    }
+
+    .footer-inloggen img {
+        width: 100px; 
+        height: auto; 
+        padding-left: 5px;
+    }
+
+    .footer-inloggen,
+    .footer-links,
+    .footer-info {
+        display: flex; /* Flex voor de inhoud binnenin */
+        flex-direction: column; /* Zorg dat de inhoud netjes gestapeld is */
+        justify-content: space-between; /* Optioneel: inhoud uitspreiden */
+        border: 1px solid black; /* Behoud de borders */
+        padding: 10px; /* Ruimte binnenin de kolommen */
+    }
+}
+
+.footer-2{
+    display: flex;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: var(--font-size-paragraph);
+    font-family: var(--main-font);
+    font-weight: var(--regular-font-weight);
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing-main);
+}
+
+.socials{
+    padding-top: 15px;
+    padding-left: 10px;
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+.copyright{
+    margin-left: auto;
+    padding-right: 10px;
+
+    p{
+        font-size: 16px;
+    }
+}
+
