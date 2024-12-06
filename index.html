@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Look and Feel</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://renzowille.github.io/look-and-feel-styleguide/dda.css">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        
-    <header>
-        <nav class="topnav">
-            <img src="logodda.png" alt="logodda">
-                
-                <!-- Navigation links for desktop -->
-            <div class="nav-links">
-                <a href="#Over-ons">Over ons</a>
-                <a href="#Events">Events</a>
-                <a href="#Publicaties">Publicaties</a>
-                <a class="active" href="#Leden">Leden</a>
-                <a href="#Vacatures">Vacatures</a>
-            </div>
-        
-                <!-- Right-side links for desktop -->
-            <div class="right-links">
-                <a href="#Inloggen">Inloggen</a>
-                <button href="detail.html">Word lid &#8594;</button>
-            </div>
-        
-                <!-- Hamburger icon for mobile -->
-            <div class="hamburger" id="hamburger">
-                &#9776; <!-- Hamburger icon -->
-            </div>
-        
-                <!-- Mobile menu: all links (nav-links and right-links combined) -->
-            <div class="mobile-menu" id="mobile-menu">
-                <a href="#Over-ons">Over ons</a>
-                <a href="#Events">Events</a>
-                <a href="#Publicaties">Publicaties</a>
-                <a class="active" href="#Leden">Leden</a>
-                <a href="#Vacatures">Vacatures</a>
-                <a href="#Inloggen">Inloggen</a>
-                <a href="detail.html">Word lid</a>
-            </div>
-        </nav>
-    </header>
-                
-    <header class="hero">
-        <a href="Home" class="home">← Terug naar home</a>
-        <h1>ONZE LEDEN</h1>
-        <p>De [nummer] beste digitale bureaus van Nederland zijn verenigd in Dutch Digital Agencies. Zet de juiste filters aan en zoek contact met het bureau dat het beste past bij jouw vraagstuk en uitdaging.</p>
-        <p>Ook DDA lid worden? Ga dan naar <a href="Word-lid">deze pagina</a> voor meer informatie</p>
-    </header>
 
-    <form class="filter">
-      <input type="text" id="search-input" placeholder="Zoek een bureau..." onkeyup="filterItems()">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Look and Feel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://renzowille.github.io/look-and-feel-styleguide/dda.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="topnav">
+      <img src="logodda.png" alt="logodda">
+
+      <!-- Navigation links for desktop -->
+      <div class="nav-links">
+        <a href="#Over-ons">Over ons</a>
+        <a href="#Events">Events</a>
+        <a href="#Publicaties">Publicaties</a>
+        <a class="active" href="#Leden">Leden</a>
+        <a href="#Vacatures">Vacatures</a>
+      </div>
+
+      <!-- Right-side links for desktop -->
+      <div class="right-links">
+        <a href="#Inloggen">Inloggen</a>
+        <button href="detail.html">Word lid &#8594;</button>
+      </div>
+
+      <!-- Hamburger icon for mobile -->
+      <div class="hamburger" id="hamburger">
+        &#9776; <!-- Hamburger icon -->
+      </div>
+
+      <!-- Mobile menu: all links (nav-links and right-links combined) -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#Over-ons">Over ons</a>
+        <a href="#Events">Events</a>
+        <a href="#Publicaties">Publicaties</a>
+        <a class="active" href="#Leden">Leden</a>
+        <a href="#Vacatures">Vacatures</a>
+        <a href="#Inloggen">Inloggen</a>
+        <a href="detail.html">Word lid</a>
+      </div>
+    </nav>
+  </header>
+
+  <header class="hero">
+    <a href="Home" class="home">← Terug naar home</a>
+    <h1>ONZE LEDEN</h1>
+    <p>De [nummer] beste digitale bureaus van Nederland zijn verenigd in Dutch Digital Agencies. Zet de juiste filters
+      aan en zoek contact met het bureau dat het beste past bij jouw vraagstuk en uitdaging.</p>
+    <p>Ook DDA lid worden? Ga dan naar <a href="Word-lid">deze pagina</a> voor meer informatie</p>
+  </header>
+
+  <form class="filter">
+    <input type="text" id="search-input" placeholder="Zoek een bureau..." onkeyup="filterItems()">
+    <div class="functionscontainer">
       <ul id="items-list">
+        <li class="allfunctions">
+          <button id="allfunctionstoggle">Alle functies ⬇</button>
+        </li>
         <li>
           <select class="filter-element">
             <option value="">Expertise</option>
@@ -74,10 +84,13 @@
             <option value="Research">Development</option>
             <option value="Research">Experience</option>
           </select>
+
           <span class="plus-sign">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
             </svg>
           </span>
         </li>
@@ -91,239 +104,250 @@
           </select>
           <span class="plus-sign">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
+              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
             </svg>
           </span>
         </li>
 
-          <li>
-            <select class="filter-element">
-              <option value="">Omvang</option>
-              <option value="Design">Design</option>
-              <option value="Research">Research</option>
-            </select>
-            <span class="plus-sign">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-                <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-              </svg>
-            </span>
-          </li>
+        <li>
+          <select class="filter-element">
+            <option value="">Omvang</option>
+            <option value="Design">Design</option>
+            <option value="Research">Research</option>
+          </select>
+          <span class="plus-sign">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </li>
 
-          <li>
-            <select class="filter-element">
-              <option value="">Provincie</option>
-              <option value="Design">Design</option>
-              <option value="Research">Research</option>
-            </select>
-            <span class="plus-sign">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-                <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-              </svg>
-            </span>
-          </li>
+        <li>
+          <select class="filter-element">
+            <option value="">Provincie</option>
+            <option value="Design">Design</option>
+            <option value="Research">Research</option>
+          </select>
+          <span class="plus-sign">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </li>
 
-          <li>
-            <select class="filter-element">
-              <option value="">Sorteren</option>
-              <option value="Design">Design</option>
-              <option value="Research">Research</option>
-            </select>
-            <span class="plus-sign">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-                <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023" stroke-linejoin="round"/>
-              </svg>
-            </span>
-          </li>
+        <li>
+          <select class="filter-element">
+            <option value="">Sorteren</option>
+            <option value="Design">Design</option>
+            <option value="Research">Research</option>
+          </select>
+          <span class="plus-sign">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </li>
       </ul>
+    </div>
   </form>
 
-        <section class="block-container">
-            <article class="block">
-                <img src="sumedia.png" alt="sumedia">
-                <p class="strategy">Strategy</p>
-                <h2>Sumedia</h2>
-                <p>Arnhem</p>
-                <p>25-49 Werknemers</p>
-                <a href="Sumedia">Details></a>
-            </article>
+  <section class="block-container">
+    <article class="block">
+      <img src="sumedia.png" alt="sumedia">
+      <p class="strategy">Strategy</p>
+      <h2>Sumedia</h2>
+      <p>Arnhem</p>
+      <p>25-49 Werknemers</p>
+      <a href="Sumedia">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="msml.png" alt="MSML">
-                <p class="strategy">Development</p>
-                <h2>MSML</h2>
-                <p>Deventer</p>
-                <p>10-24 Werknemers</p>
-                <a href="MSML">Details></a>
-            </article>
+    <article class="block">
+      <img src="msml.png" alt="MSML">
+      <p class="strategy">Development</p>
+      <h2>MSML</h2>
+      <p>Deventer</p>
+      <p>10-24 Werknemers</p>
+      <a href="MSML">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="essense.png" alt="essense">
-                <p class="strategy">Service Design</p>
-                <h2>Essense</h2>
-                <p>Amsterdam</p>
-                <p>25-49 Werknemers</p>
-                <a href="Essense">Details></a>
-            </article>
+    <article class="block">
+      <img src="essense.png" alt="essense">
+      <p class="strategy">Service Design</p>
+      <h2>Essense</h2>
+      <p>Amsterdam</p>
+      <p>25-49 Werknemers</p>
+      <a href="Essense">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="cleverfranke.png" alt="cleverfranke">
-                <p class="strategy">Experience</p>
-                <h2>Clever Franke</h2>
-                <p>Utrecht</p>
-                <p>25-49 Werknemers</p>
-                <a href="CleverFranke">Details></a>
-            </article>
+    <article class="block">
+      <img src="cleverfranke.png" alt="cleverfranke">
+      <p class="strategy">Experience</p>
+      <h2>Clever Franke</h2>
+      <p>Utrecht</p>
+      <p>25-49 Werknemers</p>
+      <a href="CleverFranke">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="informaat.png" alt="informaat">
-                <p class="strategy">Experience</p>
-                <h2>Informaat</h2>
-                <p>Hilversum</p>
-                <p>50-99 Werknemers</p>
-                <a href="Informaat">Details></a>
-            </article>
+    <article class="block">
+      <img src="informaat.png" alt="informaat">
+      <p class="strategy">Experience</p>
+      <h2>Informaat</h2>
+      <p>Hilversum</p>
+      <p>50-99 Werknemers</p>
+      <a href="Informaat">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="mediamonks.png" alt="mediamonks">
-                <p class="strategy">Production</p>
-                <h2>Media.<br>Monks</h2>
-                <p>Hilversum, Amsterdam, Berlijn...</p>
-                <p>1000+ Werknemers</p>
-                <a href="Media.Monks">Details></a>
-            </article>
-        </section>
+    <article class="block">
+      <img src="mediamonks.png" alt="mediamonks">
+      <p class="strategy">Production</p>
+      <h2>Media.<br>Monks</h2>
+      <p>Hilversum, Amsterdam, Berlijn...</p>
+      <p>1000+ Werknemers</p>
+      <a href="Media.Monks">Details></a>
+    </article>
+  </section>
 
-        <section class="vacatureblok">
-            <h3>Kom werken bij de beste digitale bureaus van Nederland.</h3>
-            <a class="vacaturelink" href="#Vacatures">Bekijk vacatures (54)</a>
-        </section>    
+  <section class="vacatureblok">
+    <h3>Kom werken bij de beste digitale bureaus van Nederland.</h3>
+    <a class="vacaturelink" href="#Vacatures">Bekijk vacatures (54)</a>
+  </section>
 
-        <section class="block-container">
-            <article class="block">
-                <img src="bfinternet.png" alt="Big-Fat-Internet">
-                <p class="strategy">Webdesign</p>
-                <h2>Big Fat Internet</h2>
-                <p>Zevenaar</p>
-                <p>25-49 Werknemers</p>
-                <a href="Big-Fat-Internet">Details></a>
-            </article>
+  <section class="block-container">
+    <article class="block">
+      <img src="bfinternet.png" alt="Big-Fat-Internet">
+      <p class="strategy">Webdesign</p>
+      <h2>Big Fat Internet</h2>
+      <p>Zevenaar</p>
+      <p>25-49 Werknemers</p>
+      <a href="Big-Fat-Internet">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="adwise.png" alt="adwise">
-                <p class="strategy">Digital</p>
-                <h2>Adwise</h2>
-                <p>Almelo, Utrecht</p>
-                <p>100-249 Werknemers</p>
-                <a href="Adwise">Details></a>
-            </article>
+    <article class="block">
+      <img src="adwise.png" alt="adwise">
+      <p class="strategy">Digital</p>
+      <h2>Adwise</h2>
+      <p>Almelo, Utrecht</p>
+      <p>100-249 Werknemers</p>
+      <a href="Adwise">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="uncinc.png" alt="Unc-Inc">
-                <p class="strategy">Experience</p>
-                <h2>Unc Inc</h2>
-                <p>Amsterdam</p>
-                <p>25-49 Werknemers</p>
-                <a href="Unc-Inc">Details></a>
-            </article>
+    <article class="block">
+      <img src="uncinc.png" alt="Unc-Inc">
+      <p class="strategy">Experience</p>
+      <h2>Unc Inc</h2>
+      <p>Amsterdam</p>
+      <p>25-49 Werknemers</p>
+      <a href="Unc-Inc">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="dept.png" alt="Dept">
-                <p class="strategy">Fullservice</p>
-                <h2>DeptⓇ</h2>
-                <p>Amsterdam, Rotterdam, Zwolle</p>
-                <p>500+ Werknemers</p>
-                <a href="Dept">Details></a>
-            </article>
+    <article class="block">
+      <img src="dept.png" alt="Dept">
+      <p class="strategy">Fullservice</p>
+      <h2>DeptⓇ</h2>
+      <p>Amsterdam, Rotterdam, Zwolle</p>
+      <p>500+ Werknemers</p>
+      <a href="Dept">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="valsplat.png" alt="Valsplat">
-                <p class="strategy">Design</p>
-                <p class="strategy">Research</p>
-                <h2>Valsplat</h2>
-                <p>Amsterdam, Nieuwersluis</p>
-                <p>50-99 Werknemers</p>
-                <a href="Valsplat">Details></a>
-            </article>
+    <article class="block">
+      <img src="valsplat.png" alt="Valsplat">
+      <p class="strategy">Design</p>
+      <p class="strategy">Research</p>
+      <h2>Valsplat</h2>
+      <p>Amsterdam, Nieuwersluis</p>
+      <p>50-99 Werknemers</p>
+      <a href="Valsplat">Details></a>
+    </article>
 
-            <article class="block">
-                <img src="ksdesign.png" alt="Koos-Service-Design">
-                <p class="strategy">Service Design</p>
-                <h2>Koos Service Design</h2>
-                <p>Amsterdam, Lissabon, Berlijn</p>
-                <p>50-99 Werknemers</p>
-                <a href="Koos-Service-Design">Details></a>
-            </article>
-        </section>
-        
-        <section class="laden">
-            <p>Meer leden laden...</p>
-        </section>
+    <article class="block">
+      <img src="ksdesign.png" alt="Koos-Service-Design">
+      <p class="strategy">Service Design</p>
+      <h2>Koos Service Design</h2>
+      <p>Amsterdam, Lissabon, Berlijn</p>
+      <p>50-99 Werknemers</p>
+      <a href="Koos-Service-Design">Details></a>
+    </article>
+  </section>
 
-        <section class="partners">
-            <h2>Wij bedanken onze trouwe partners</h2>
-            <a class=partnerworden href="#Partner-worden">Word partner →</a>
-        </section>
+  <section class="laden">
+    <p>Meer leden laden...</p>
+  </section>
 
-        <article class="partner-carousel">
-            <img src="amac.png" alt="logo amac">
-            <img src="bno.png" alt="logo bno">
-            <img src="ictrecht.png" alt="logo ictrecht">
-            <img src="via.png" alt="logo via">
-            <img src="rootnet.png" alt="logo rootnet">
-            <img src="amac.png" alt="logo amac">
-            <img src="bno.png" alt="logo bno">
-            <img src="ictrecht.png" alt="logo ictrecht">
-            <img src="via.png" alt="logo via">
-            <img src="rootnet.png" alt="logo rootnet">
-        </article>
+  <section class="partners">
+    <h2>Wij bedanken onze trouwe partners</h2>
+    <a class=partnerworden href="#Partner-worden">Word partner →</a>
+  </section>
 
-        <footer>
-            <div class="footer-inloggen">
-                <img src="logodda.png" alt="logodda">
-                <a href="Inloggen">Inloggen →</a>
-            </div>
+  <article class="partner-carousel">
+    <img src="amac.png" alt="logo amac">
+    <img src="bno.png" alt="logo bno">
+    <img src="ictrecht.png" alt="logo ictrecht">
+    <img src="via.png" alt="logo via">
+    <img src="rootnet.png" alt="logo rootnet">
+    <img src="amac.png" alt="logo amac">
+    <img src="bno.png" alt="logo bno">
+    <img src="ictrecht.png" alt="logo ictrecht">
+    <img src="via.png" alt="logo via">
+    <img src="rootnet.png" alt="logo rootnet">
+  </article>
 
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#Over-ons">Over ons</a></li>
-                    <li><a href="#Events">Events</a></li>
-                    <li><a href="#Publicaties">Publicaties</a></li>
-                    <li><a href="#Leden">Leden</a></li>
-                    <li><a href="#Vacatures">Vacatures</a></li>
-                    <li><a href="#Algemene-voorwaarden">Algemene Voorwaarden</a></li>
-                    <li><a href="#Privacybeleid">Privacybeleid</a></li>
-                    <li><a href="#Events">Events</a></li>
-                </ul>
-            </div>
+  <footer>
+    <div class="footer-inloggen">
+      <img src="logodda.png" alt="logodda">
+      <a href="Inloggen">Inloggen →</a>
+    </div>
 
-            <div class="footer-info">
-                <strong><p>Dutch Digital Agencies</p></strong>
-                <ul>
-                  <li>Capital C</li>
-                  <li>Weesperplein 4B</li>
-                  <li>1018 XA Amsterdam</li>
-                  <li>(0)85 4010391</li>
-                  <li><a>info@dutchdigitalagencies.com</a></li>
-                </ul>
-            </div>
-        </footer>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#Over-ons">Over ons</a></li>
+        <li><a href="#Events">Events</a></li>
+        <li><a href="#Publicaties">Publicaties</a></li>
+        <li><a href="#Leden">Leden</a></li>
+        <li><a href="#Vacatures">Vacatures</a></li>
+        <li><a href="#Algemene-voorwaarden">Algemene Voorwaarden</a></li>
+        <li><a href="#Privacybeleid">Privacybeleid</a></li>
+        <li><a href="#Events">Events</a></li>
+      </ul>
+    </div>
 
-        <section class="footer-2">
-            <div class="socials">
-                <a>Instagram</a>
-                <a>Facebook</a>
-                <a>Linkedin</a>
-            </div>
+    <div class="footer-info">
+      <strong>
+        <p>Dutch Digital Agencies</p>
+      </strong>
+      <ul>
+        <li>Capital C</li>
+        <li>Weesperplein 4B</li>
+        <li>1018 XA Amsterdam</li>
+        <li>(0)85 4010391</li>
+        <li><a>info@dutchdigitalagencies.com</a></li>
+      </ul>
+    </div>
+  </footer>
 
-            <div class="copyright">
-                <p>Copyright ⓒ 2024 Dutch Digital Agencies</p>
-            </div>
-        </section>
+  <section class="footer-2">
+    <div class="socials">
+      <a>Instagram</a>
+      <a>Facebook</a>
+      <a>Linkedin</a>
+    </div>
 
-    </body>
+    <div class="copyright">
+      <p>Copyright ⓒ 2024 Dutch Digital Agencies</p>
+    </div>
+  </section>
+
+</body>
 
 </html>

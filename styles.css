@@ -145,41 +145,38 @@ body {
 }
 
   .filter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Items verdeeld over de volledige breedte */
-    flex-wrap: wrap; /* Laat de items wrappen indien nodig */
     margin-bottom: 20px;
     padding: 10px;
+
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: "Martian Mono";
+        text-transform: uppercase;
+        gap: 12px;
+        padding: 10px 16px 10px 16px;
+        background-color: white;
+        
+    }
+
+    /* li {
+        overflow: hidden;
+        max-height: 100px;
+        transition: max-height .45s ease;
+    } */
 }
 
-@media (max-width: 768px) {
-    .filter {
-        flex-direction: column; /* Zet de filter items onder elkaar */
-        justify-content: center; /* Centreer items horizontaal */
-        align-items: center; /* Centreer items verticaal */
-        padding: 10px;
+#items-list:not(.functionsVisible) {
+    li:not(.allfunctions) {
+        display: none;
     }
-
-    .filter ul {
-        justify-content: center; /* Centreer de lijst met filters */
-        width: 100%; /* Laat de lijst de volledige breedte gebruiken */
-        text-align: center; /* Zorg ervoor dat de tekst ook gecentreerd is */
-    }
-
-    .filter li {
-        margin-right: 0; /* Verwijder eventuele marges tussen de filter items */
-        margin-bottom: 10px; /* Voeg een kleine marge aan de onderkant toe */
-        text-align: center; /* Centreer de tekst in elke filter */
-    }
-
-    #search-input {
-        width: 100%; /* Zorg ervoor dat de zoekbalk de volledige breedte heeft */
-        margin-bottom: 10px; /* Voeg wat ruimte onder de zoekbalk toe */
-        text-align: center;
-        }
 }
 
+.functionscontainer {
+    overflow: auto;
+}
 
 .filter #search-input {
     flex-wrap: wrap;
@@ -197,7 +194,7 @@ body {
     padding: 0;
     margin: 0;
     margin-left: auto; 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     @media (min-width: 768px) {
         padding: 8px;
@@ -226,15 +223,6 @@ body {
       background: white;
       pointer-events: none;
     }
-}
-
-.filter-element{
-  border: 2px solid black;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-family: var(--secondary-font);
-  height: 52px;
-  width: 149px;
 }
 
 .block-container {
