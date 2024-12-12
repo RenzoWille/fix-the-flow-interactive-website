@@ -1,0 +1,136 @@
+body {
+    font-family: "Archivo";
+
+    h3 {
+        font-size: var(--font-size-m);
+    }
+
+    p {
+        font-size: var(--font-size-paragraph);
+    }
+
+    @media (min-width: 1024px) {
+
+        .title-text,
+        .lidmaatschap,
+        .steps,
+        .form {
+            max-width: 50%;
+            margin-left: auto;
+        }
+    }
+}
+
+.hero {
+    img {
+        width: 100%;
+        /* Zorgt ervoor dat de afbeelding de volledige breedte van de container inneemt */
+        height: 100%;
+        /* De afbeelding vult de volledige hoogte van de hero sectie */
+        object-fit: cover;
+        /* Zorgt ervoor dat de afbeelding wordt gesneden om de container te vullen, zonder de verhoudingen te verstoren */
+    }
+
+    @media (min-width: 1024px) {
+        .hero {
+            height: 400px;
+            /* Vaste hoogte voor grotere schermen */
+        }
+
+        img {
+            object-fit: cover;
+            /* Zorgt ervoor dat de afbeelding de sectie vult zonder vervorming */
+        }
+    }
+}
+
+.title-text {
+    @media (min-width: 1024px) {
+        .title-text {
+            text-align: right;
+        }
+    }
+}
+
+.steps {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+}
+
+.steps-container {
+    display: grid;
+}
+
+@media (min-width: 1024px) {
+    .steps-container {
+        grid-template-columns: 1fr 1fr; 
+        grid-auto-rows: auto; /* Zorgt dat de rijen automatisch de hoogte bepalen */
+    }
+
+    .steps{
+        width: 100%;
+    }
+}
+
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 8px 5px;
+        border: none;
+        border-bottom: 2px solid #000000;
+        background: none;
+        font-size: 16px;
+        color: black;
+    }
+
+    input:focus {
+        border-bottom-color: var(--changeable-color);
+        outline: none;
+    }
+
+    label {
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        font-size: 16px;
+        color: #aaa;
+        pointer-events: none;
+        transition: 0.3s;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        top: -10px;
+        font-size: 12px;
+        color: var(--changeable-color);
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: "Martian Mono";
+        text-transform: uppercase;
+        gap: 12px;
+        padding: 10px 16px 10px 16px;
+        border: 2px solid #222226;
+        background-color: white;
+    }
+}

@@ -228,7 +228,7 @@ body {
 .block-container {
     display: flex;
     flex-direction: column; /* Standaard verticale richting */
-    max-width: 97%;
+    max-width: 100%;
     gap: 16px; /* Ruimte tussen blokken */
     font-family: "Martian Mono";
 
@@ -275,7 +275,7 @@ body {
 }
 
 /* Media query voor grotere schermen */
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
     .block-container {
         flex-direction: row; /* Horizontale richting */
         flex-wrap: wrap; /* Laat blokken wrappen als nodig */
