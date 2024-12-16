@@ -144,39 +144,52 @@ body {
     }
 }
 
-  .filter {
+.filter {
     margin-bottom: 20px;
     padding: 10px;
 
-    button{
+    button {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 12px;
+        width: 15em;
         font-family: "Martian Mono";
         text-transform: uppercase;
         gap: 12px;
-        padding: 10px 16px 10px 16px;
+        padding: 10px 16px;
         background-color: white;
-        
+        border: 1px solid #000000; /* Voeg een rand toe voor een betere uitstraling */
     }
 
-    /* li {
-        overflow: hidden;
-        max-height: 100px;
-        transition: max-height .45s ease;
-    } */
-}
+    #toggle-icon {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
 
-#items-list:not(.functionsVisible) {
-    li:not(.allfunctions) {
-        display: none;
+    #toggle-text {
+        transition: opacity 0.3s ease;
+    }
+
+    #items-list:not(.functionsVisible) {
+        li:not(.allfunctions) {
+            display: none;
+        }
+    }
+
+    .functionscontainer {
+        overflow: auto;
     }
 }
 
-.functionscontainer {
-    overflow: auto;
+.functionsVisible #toggle-text {
+    opacity: 0;
 }
+
+.functionsVisible #toggle-icon {
+    transform: rotate(45deg); /* Draai het kruisje wanneer de filters open zijn */
+}
+
 
 .filter #search-input {
     flex-wrap: wrap;
@@ -215,8 +228,8 @@ body {
 
     .plus-sign{
       position: absolute;
-      right: 22px;
-      top: 25px;
+      right: 15px;
+      top: 15px;
       padding-right: 10px;
       height: 25%;
       width: 10%;

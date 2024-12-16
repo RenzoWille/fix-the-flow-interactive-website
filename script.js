@@ -8,3 +8,4 @@ document.getElementById("allfunctionstoggle").addEventListener("click", function
     console.log('test')
     document.querySelector('#items-list').classList.toggle('functionsVisible')
 });
+

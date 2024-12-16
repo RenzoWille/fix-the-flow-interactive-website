@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Look and Feel</title>
+  <title>Fix The Flow</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
@@ -69,99 +69,104 @@
   <form class="filter">
     <input type="text" id="search-input" placeholder="Zoek een bureau..." onkeyup="filterItems()">
     <div class="functionscontainer">
-      <ul id="items-list">
-        <li class="allfunctions">
-          <button id="allfunctionstoggle">Alle functies ⬇</button>
-        </li>
-        <li>
-          <select class="filter-element">
-            <option value="">Expertise</option>
-            <option value="Design">Design</option>
-            <option value="Research">Research</option>
-            <option value="Research">Service Design</option>
-            <option value="Research">Strategy</option>
-            <option value="Research">HR</option>
-            <option value="Research">Development</option>
-            <option value="Research">Experience</option>
-          </select>
-
-          <span class="plus-sign">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-        </li>
-
-
-        <li>
-          <select class="filter-element">
-            <option value="">Branche</option>
-            <option value="Design">Design</option>
-            <option value="Research">Research</option>
-          </select>
-          <span class="plus-sign">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-        </li>
-
-        <li>
-          <select class="filter-element">
-            <option value="">Omvang</option>
-            <option value="Design">Design</option>
-            <option value="Research">Research</option>
-          </select>
-          <span class="plus-sign">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-        </li>
-
-        <li>
-          <select class="filter-element">
-            <option value="">Provincie</option>
-            <option value="Design">Design</option>
-            <option value="Research">Research</option>
-          </select>
-          <span class="plus-sign">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-        </li>
-
-        <li>
-          <select class="filter-element">
-            <option value="">Sorteren</option>
-            <option value="Design">Design</option>
-            <option value="Research">Research</option>
-          </select>
-          <span class="plus-sign">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-              <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-        </li>
-      </ul>
+        <ul id="items-list">
+            <li class="allfunctions">
+                <button id="allfunctionstoggle">
+                    <span id="toggle-text">Alle filters</span>
+                    <span id="toggle-icon" class="plus-sign">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                                stroke-linejoin="round" />
+                            <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <select class="filter-element">
+                    <option value="">Expertise</option>
+                    <option value="Design">Design</option>
+                    <option value="Research">Research</option>
+                    <option value="Service Design">Service Design</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="HR">HR</option>
+                    <option value="Development">Development</option>
+                    <option value="Experience">Experience</option>
+                </select>
+                <span class="plus-sign">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </li>
+            <li>
+                <select class="filter-element">
+                    <option value="">Branche</option>
+                    <option value="Design">Design</option>
+                    <option value="Research">Research</option>
+                </select>
+                <span class="plus-sign">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </li>
+            <li>
+                <select class="filter-element">
+                    <option value="">Omvang</option>
+                    <option value="Design">Design</option>
+                    <option value="Research">Research</option>
+                </select>
+                <span class="plus-sign">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </li>
+            <li>
+                <select class="filter-element">
+                    <option value="">Provincie</option>
+                    <option value="Design">Design</option>
+                    <option value="Research">Research</option>
+                </select>
+                <span class="plus-sign">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </li>
+            <li>
+                <select class="filter-element">
+                    <option value="">Sorteren</option>
+                    <option value="Design">Design</option>
+                    <option value="Research">Research</option>
+                </select>
+                <span class="plus-sign">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5L12 19.5" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                        <path d="M19.5 12L4.5 12" stroke="#222226" stroke-width="1.5" stroke-miterlimit="4.62023"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </li>
+        </ul>
     </div>
-  </form>
+</form>
+
 
   <section class="block-container">
     <article class="block">
