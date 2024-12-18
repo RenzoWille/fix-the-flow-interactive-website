@@ -26,10 +26,6 @@ Mobiel:
 ![homemobiel](https://github.com/user-attachments/assets/bd9ced0b-42f3-452e-9887-80d3412164c7)
 ![mobielfilter](https://github.com/user-attachments/assets/4c056077-294c-4abb-ad84-757ffef13d9a)
 
-
-<img src='images/homemobiel.png' alt='filter-element'>
-<img src='images/mobielfilter.png' alt='filter-element'>
-
 Door op de button 'Alle filters' te klikken, komen alle verschillende filters tevoorschijn (Met overflow: auto wordt ervoor gezorgd dat je door de filters kan 'scrollen', zodat het zo min mogelijk ruimte in beslag neemt). Ook kan hier doorheen getabt worden en kan de bezoeker dus een keuze maken om een bepaalde filter toe te passen.
 
 
