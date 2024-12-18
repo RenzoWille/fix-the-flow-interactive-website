@@ -159,7 +159,7 @@ body {
         gap: 12px;
         padding: 10px 16px;
         background-color: white;
-        border: 1px solid #000000; /* Voeg een rand toe voor een betere uitstraling */
+        border: 1px solid #000000;
     }
 
     #toggle-icon {
@@ -169,6 +169,7 @@ body {
 
     #toggle-text {
         transition: opacity 0.3s ease;
+        color: black;
     }
 
     #items-list:not(.functionsVisible) {
@@ -180,10 +181,6 @@ body {
     .functionscontainer {
         overflow: auto;
     }
-}
-
-.functionsVisible #toggle-text {
-    opacity: 0;
 }
 
 .functionsVisible #toggle-icon {
