@@ -1,4 +1,3 @@
-
 Ontwerp en maak een interactieve website voor een opdrachtgever.
 
 De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/INSTRUCTIONS.md)
@@ -16,8 +15,9 @@ Desktop:
 <img src='images/filter1.png' alt='filter-element'>
 <img src='images/filter2.png' alt='filter-element'>
 <img src='images/filter3.png' alt='filter-element'>
-<video src='filterivideo.mp4' alt='filtervideo'>
-
+[<video src='filterivideo.mp4' alt='filtervideo'>
+](https://github.com/user-attachments/assets/cd1da4e4-feff-4e24-becd-43b7ee70a423
+)
 Door op de button 'Alle filters' te klikken, komen alle verschillende filters tevoorschijn. Ook kan hier doorheen getabt worden en kan de bezoeker dus een keuze maken om een bepaalde filter toe te passen.
 
 Mobiel:
@@ -25,6 +25,9 @@ Mobiel:
 <img src='images/mobielfilter.png' alt='filter-element'>
 
 Door op de button 'Alle filters' te klikken, komen alle verschillende filters tevoorschijn (Met overflow: auto wordt ervoor gezorgd dat je door de filters kan 'scrollen', zodat het zo min mogelijk ruimte in beslag neemt). Ook kan hier doorheen getabt worden en kan de bezoeker dus een keuze maken om een bepaalde filter toe te passen.
+
+
+
  
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
