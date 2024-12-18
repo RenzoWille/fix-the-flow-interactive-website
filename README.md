@@ -23,6 +23,10 @@ https://github.com/user-attachments/assets/ec2eb751-97bb-476d-8d5c-aa38b55f5801
 Door op de button 'Alle filters' te klikken, komen alle verschillende filters tevoorschijn. Ook kan hier doorheen getabt worden en kan de bezoeker dus een keuze maken om een bepaalde filter toe te passen.
 
 Mobiel:
+![homemobiel](https://github.com/user-attachments/assets/bd9ced0b-42f3-452e-9887-80d3412164c7)
+![mobielfilter](https://github.com/user-attachments/assets/4c056077-294c-4abb-ad84-757ffef13d9a)
+
+
 <img src='images/homemobiel.png' alt='filter-element'>
 <img src='images/mobielfilter.png' alt='filter-element'>
 
