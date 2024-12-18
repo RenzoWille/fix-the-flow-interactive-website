@@ -15,9 +15,11 @@ Desktop:
 <img src='images/filter1.png' alt='filter-element'>
 <img src='images/filter2.png' alt='filter-element'>
 <img src='images/filter3.png' alt='filter-element'>
-[<video src='filterivideo.mp4' alt='filtervideo'>
-](https://github.com/user-attachments/assets/cd1da4e4-feff-4e24-becd-43b7ee70a423
-)
+
+
+https://github.com/user-attachments/assets/ec2eb751-97bb-476d-8d5c-aa38b55f5801
+
+
 Door op de button 'Alle filters' te klikken, komen alle verschillende filters tevoorschijn. Ook kan hier doorheen getabt worden en kan de bezoeker dus een keuze maken om een bepaalde filter toe te passen.
 
 Mobiel:
